@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registrarCajero.css">
+    <title>Registro de Cajero</title>
+</head>
+<body>
+<div class="navbar">
+    <h1>Administrar Cajeros</h1>
+</div>
+
+<div class="container">
+    <div class="form-container">
+        <h2>REGISTRAR CAJERO</h2>
+        <form action="/registrarCajero" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="nro_identidad">DNI:</label>
+            <input type="text" id="nro_identidad" name="nro_identidad" required>
+
+            <label for="telefono">Nro Telefono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="button-container">
+                <button type="submit" class="register-btn">Registrar</button>
+                <button type="reset" class="clear-btn">Limpiar</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

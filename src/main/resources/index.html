@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+<header>
+    <h1>Login</h1>
+</header>
+
+<div class="container-fluid form-container">
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+            <img src="../img/importante/logo.png" alt="Logo" class="img-fluid" style="max-width: 80%; height: auto;">
+        </div>
+        <div class="col-md-6">
+            <div class="form-card">
+                <form action="login" method="post">
+                    <h2>Bienvenidos al sistema</h2>
+                    <div class="form-group">
+                        <label for="username" class="font-weight-bold">Usuario:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group position-relative">
+                        <label for="password" class="font-weight-bold">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        <span id="togglePassword" style="cursor: pointer; position: absolute; right: 10px; top: 38px;">
+                            <i class="fas fa-eye" id="eyeIcon"></i>
+                        </span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="JS/login.js"></script> <!-- Link to your external JS file -->
+</body>
+</html>
