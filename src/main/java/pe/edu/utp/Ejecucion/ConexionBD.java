@@ -8,7 +8,7 @@ public class ConexionBD {
 
     private static final String URL = "jdbc:mysql://localhost:3306/CanchaDeportiva?useSSL=false&serverTimezone=UTC";
     private static final String USUARIO = "root";
-    private static final String CONTRASENA = "";
+    private static final String CONTRASENA = "1234";
 
     public static Connection obtenerConexion() {
         Connection conexion = null;
